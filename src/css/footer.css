@@ -1,0 +1,44 @@
+.footer{
+    width: 100%;
+    background-color:  #263238;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+    padding: 30px;
+    margin-top: 30px;
+  }
+
+  .div2{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+  }
+  .emx{
+    width: 200px;
+    padding: 5px;
+    background-color: #89939E;
+    text-align: left;
+    border-radius: 20px;
+    margin-top:2%;
+    margin-left:15%;
+  }
+  .easy{
+    list-style-type: none;
+    display: block;
+  }
+  .list-item{
+    display: flex;
+    width:100%;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+  }
+  img{
+    margin-left: 2%;
+  }
+ 
+ 
