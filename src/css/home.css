@@ -16,9 +16,11 @@
     box-sizing: border-box;
   }
   body {
-    background-image: url('../assests/Minimalist-Background-HD.png');
+    background-image: url('../assests/bg2.jpg');
     background-size: cover;
     background-position: center;
+    background-color:transparent;
+    backdrop-filter:blur(20px);
   }
   
   
@@ -28,21 +30,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: white; 
-    /* background-image: url('../assests/Minimalist-Background-HD.png'); */
-    /* background-size: cover; */
-    /* background-position: center; */
   }
-  /* .parallax {
-  
-    background-image: url("../assests/Minimalist-Background-HD.png");
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
-
-  
   .c1 {
     display: flex;
     align-items: center;
@@ -69,20 +57,19 @@
   }
   .c2-1{
     display: flex;
+    width: 100%;
     justify-content: end;
+    align-content: center;
     margin-top: 3%;
   
   }
   .c3{
     display: flex;
     justify-content: end;
- 
-
   }
   
   li{
     display: flex;
-    width:100%;
     padding: 20px;
     font-size: 20px;
     font-weight: 500;
@@ -208,14 +195,6 @@
     flex-direction: row
   }
 }
-
-/* .box-item {
-  position: relative;
-  -webkit-backface-visibility: hidden;
-  width: 415px;
-  margin-bottom: 35px;
-  max-width: 100%;
-} */
 
 .flip-box {
   -ms-transform-style: preserve-3d;

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import NtQuiz from '../assests/NtQuiz.png'
 
 function Networking() {
   return (
@@ -9,6 +10,7 @@ function Networking() {
         Networking Quiz
         </h1>
       </div>
+      <div className="main-con">
       <div className="Current-con">
         <h2 className="cr-text">Instructions:</h2>
         <ul className=" Current-easy">
@@ -32,7 +34,10 @@ function Networking() {
       <button className="cr-btn">Start Test</button>
       </Link>
       </div>
-   
+      <div className='pg-imag' data-aos="fade-left">
+    <img src={NtQuiz} alt="Networking Quiz"  style={{ width: '500px', height: '400px' }}  />
+    </div>
+      </div>
     </div>
   )
 }

@@ -18,18 +18,18 @@ function Nav() {
         </div>
        <div className="c2">
         <div className="c2-1">
-        <ul className="ulx">
-          <li className="lix">
+        <ul>
+          <li>
           <Link to="/home">Home</Link>
             </li>
-          <li className="lix">
+          <li>
           <Link to="/Quizzes">Quizzes</Link>
             </li>
-          <li className="lix" >
-          <Link to="/About">About</Link>
+          <li>
+          <Link to="/About">About Us</Link>
             </li>
-          <li className="lix">
-          <Link to="/Contact">Contactus </Link>
+          <li>
+          <Link to="/Contact">Contact Us</Link>
             </li>
             </ul>
             </div>  

@@ -44,16 +44,16 @@ function Footer() {
             <h3>Popular Quizes</h3>
             <ul className="easy">
           <li className="list-item">
-          <Link to="/home">Current Affairs</Link>
+          <Link to="/Current">Current Affairs</Link>
             </li>
           <li className="list-item">
-          <Link to="/Quizzes">Programming</Link>
+          <Link to="/Programming">Programming</Link>
             </li>
           <li className="list-item">
-          <Link to="/About">Medical Science</Link>
+          <Link to="/MedicalScience">Medical Science</Link>
             </li>
           <li className="list-item">
-          <Link to="/Contact">Puzzles</Link>
+          <Link to="/Database">Database</Link>
             </li>
             </ul>
           </div>

@@ -2,22 +2,22 @@ import React from 'react';
 import Image from '../assests/image.png'; 
 import Video1 from '../assests/video1.mp4'; 
 import { Link } from 'react-router-dom';
-// import Programming1 from '../assests/programming1.jpeg'
 import Programming2 from '../assests/programming2.jpg'
-// import Programming3 from '../assests/programming3.jpg'
-
-// import Current from '../assests/current.png';
 import Current2 from '../assests/current2.jpg';
-import Medical from '../assests/medical.png';
+import Medical1 from '../assests/medical.jpg';
+import Logical from '../assests/logical.jpg';
+import database from '../assests/database.jpg';
+import networking from '../assests/networking.jpg';
+
 
 
 function Home() {
   return (
-    <>
+    <div>
     <div className="con1" >
         <div className="left" data-aos="zoom-in-right">
           <h1 className="text1">Unleash Your Knowledge Potential!</h1>
-          <p>Discover a world of fun and learning with our engaging quizzes. Test your knowledge, brush up on various topics,
+          <p style={{textAlign:'left'}}>Discover a world of fun and learning with our engaging quizzes. Test your knowledge, brush up on various topics,
             and challenge friends. QuizNest offers an exciting way to boost your intellect. Ready to play and learn?
           </p>
         </div>
@@ -36,23 +36,20 @@ function Home() {
           <h1 className="text2">Teaching, minus the time with BrainZap</h1>
           <br /><br />
           <hr className='line'></hr>
-          <p>It focuses on traditional methods, such as direct instruction, interactive discussions, 
+          <p style={{textAlign:'left'}}>It focuses on traditional methods, such as direct instruction, interactive discussions, 
             hands-on activities, and manual assessments. This approach emphasizes personal interaction, customized feedback,
             and adaptive learning strategies to engage students and evaluate their understanding.
           </p>
           <hr className='line'></hr><br /><br />
           <hr className='line'></hr>
-          <p>In Active Participation Students take part in group activities, projects, and discussions,
+          <p style={{textAlign:'left'}}>In Active Participation Students take part in group activities, projects, and discussions,
             which promotes collaboration and allows them to apply and deepen their understanding.
             This hands-on approach enhances their critical thinking skills and encourages active engagement with the material.
           </p>
           <hr className='line'></hr>
         </div>
       </div>
-        <div className="box-container" data-aos="zoom-out-left" >
-           {/* <div className="box-item">   */}
-           {/* </div>  */}
-           {/* <div className="box-item"> */}
+        <div className="box-container" data-aos ="zoom-out-down" >
             <div className="flip-box">
               <div className="flip-box-front text-center" style={{ backgroundImage: `url(${Programming2})` }}>
                 <div className="inner color-white">
@@ -87,16 +84,14 @@ function Home() {
                 </div>
               </div>
             </div>
-          {/* </div>  */}
-          {/* <div className="box-item"> */}
             <div className="flip-box">
-              <div className="flip-box-front text-center" style={{ backgroundImage:  `url(${Medical})` }}>
+              <div className="flip-box-front text-center" style={{ backgroundImage:  `url(${Medical1})` }}>
                 <div className="inner color-white">
                   <h3 className="flip-box-header"> Medical Science</h3>
                   <p>Explore Medical Science with Our Quiz</p>
                 </div>
               </div>
-              <div className="flip-box-back text-center" style={{ backgroundImage:  `url(${Medical})` }}>
+              <div className="flip-box-back text-center" style={{ backgroundImage:  `url(${Medical1})` }}>
                 <div className="inner color-white">
                   <h3 className="flip-box-header">Medical Science</h3>
                   <p>Test your medical knowledge! Our Medical Science Quiz covers various topics and concepts. Challenge yourself and learn more.</p>
@@ -106,18 +101,16 @@ function Home() {
                 </div>
               </div>
             </div>
-          {/* </div>  */}
         </div>  
-        <div className="box-container"data-aos="zoom-out-right">
-          {/* <div className="box-item"> */}
+        <div className="box-container" data-aos ="zoom-out-down">
             <div className="flip-box">
-              <div className="flip-box-front text-center" style={{ backgroundImage: 'url("https://s25.postimg.cc/frbd9towf/cta-2.png")' }}>
+              <div className="flip-box-front text-center" style={{ backgroundImage: `url(${Logical})` }}>
                 <div className="inner color-white">
                   <h3 className="flip-box-header">Logical Reasoning</h3>
                   <p>Challenge your mind with our Logical Reasoning Quiz</p>
                 </div>
               </div>
-              <div className="flip-box-back text-center" style={{ backgroundImage: 'url("https://s25.postimg.cc/frbd9towf/cta-2.png")' }}>
+              <div className="flip-box-back text-center" style={{ backgroundImage: `url(${Logical})`}}>
                 <div className="inner color-white">
                   <h3 className="flip-box-header">Logical Reasoning</h3>
                   <p>Test your problem-solving and creativity with our fun, brain-teasing logical reasoning quiz. Ready for the challenge?</p>
@@ -127,16 +120,14 @@ function Home() {
                 </div>
               </div>
             </div>
-          {/* </div> */}
-           {/* <div className="box-item"> */}
             <div className="flip-box">
-              <div className="flip-box-front text-center" style={{ backgroundImage: 'url("https://s25.postimg.cc/hj4c4qnov/cta-3.png")' }}>
+              <div className="flip-box-front text-center" style={{ backgroundImage: `url(${database})` }}>
                 <div className="inner color-white">
                   <h3 className="flip-box-header">Database</h3>
                   <p>Test your Database Knowledge</p>
                 </div>
               </div>
-              <div className="flip-box-back text-center" style={{ backgroundImage: 'url("https://s25.postimg.cc/hj4c4qnov/cta-3.png")' }}>
+              <div className="flip-box-back text-center" style={{ backgroundImage: `url(${database})` }}>
                 <div className="inner color-white">
                   <h3 className="flip-box-header">Database</h3>
                   <p>Test your knowledge with our Database Quiz! Answer questions on database concepts and practices to sharpen your skills and boost your expertise.</p>
@@ -146,16 +137,14 @@ function Home() {
                 </div>
               </div>
             </div>
-          {/* </div>  */}
-          {/* <div className="box-item"> */}
             <div className="flip-box">
-              <div className="flip-box-front text-center" style={{ backgroundImage: 'url("https://s25.postimg.cc/l2q9ujy4f/cta-4.png")' }}>
+              <div className="flip-box-front text-center" style={{ backgroundImage: `url(${networking})` }}>
                 <div className="inner color-white">
                   <h3 className="flip-box-header"> Networking</h3>
                   <p>Boost your Expertise with our questions</p>
                 </div>
               </div>
-              <div className="flip-box-back text-center" style={{ backgroundImage: 'url("https://s25.postimg.cc/l2q9ujy4f/cta-4.png")' }}>
+              <div className="flip-box-back text-center" style={{ backgroundImage: `url(${networking})`  }}>
                 <div className="inner color-white">
                   <h3 className="flip-box-header">Networking</h3>
                   <p>Challenge your understanding of networking concepts with our engaging quiz. Test your skills and deepen your expertise in network technologies.</p>
@@ -166,8 +155,7 @@ function Home() {
               </div>
             </div>
           </div> 
-        {/* </div>   */}
-    </>
+          </div>
   );
 }
 

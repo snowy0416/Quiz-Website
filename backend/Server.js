@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const formRoutes = require('./routes/formRoutes');
-const authRoutes = require('./routes/authRoutes');
+
 
 const app = express();
 const port = 5000;
@@ -13,8 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Routes
-app.use('/api', formRoutes);
-app.use('/api', authRoutes);    
+app.use('/api', formRoutes);   
 
 // Start Server
 app.listen(port, () => {

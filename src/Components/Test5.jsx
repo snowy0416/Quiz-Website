@@ -111,22 +111,16 @@ function Test5() {
 
   return (
     <div>
-      <h1>Database Quiz</h1>
-      {questions.map((q, index) => (
-        <div key={index} className="question-block">
-          <p>{q.question}</p>
-          {q.options.map((option, optIndex) => (
-            <label key={optIndex}>
-              <input
-                type="radio"
-                name={`question-${index}`}
-                value={optIndex}
-                checked={userAnswers[index] === optIndex}
-                onChange={() => handleAnswerChange(index, optIndex)}
-              />
+  <h1 style={{marginTop:'3%',color:'rgb(165,115,222)'}} data-aos="zoom-in-right">Database Quiz</h1>
+  {questions.map((q, index) => (
+   <div key={index} className="question-block">
+   <p>{q.question}</p>
+   {q.options.map((option, optIndex) => (
+   <label key={optIndex}>
+    <input type="radio" name={`question-${index}`} value={optIndex} checked={userAnswers[index] === optIndex} onChange={() => handleAnswerChange(index, optIndex)} />
               {option}
             </label>
-          ))}
+      ))}
         </div>
       ))}
       <button onClick={handleSubmit} className="cr-btn">Submit</button>

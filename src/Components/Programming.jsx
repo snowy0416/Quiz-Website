@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import PgQuiz from '../assests/pg-quiz.png'
 
 function Programming() {
   return (
     <div>
       <div className="Current-heading">
-        <h1>
-       Programming Quiz
-        </h1>
+        <h1> Programming Quiz</h1>
       </div>
+      < div className="main-con">
       <div className="Current-con">
         <h2 className="cr-text">Instructions:</h2>
         <ul className=" Current-easy">
@@ -32,7 +32,11 @@ function Programming() {
       <button className="cr-btn">Start Test</button>
       </Link>
       </div>
-   
+     <div className='pg-imag' data-aos="fade-left">
+    <img src={PgQuiz} alt="Programming Quiz"  style={{ width: '500px', height: '500px' }}  />
+    </div>
+    
+   </div>
     </div>
   )
 }

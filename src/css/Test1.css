@@ -12,6 +12,7 @@
     animation: zoom 0.5s ease-in-out 0.5s 1 forwards;
     justify-content: flex-start;
     text-align: left;
+ 
 }
 .code-con{
     background-color: #f5f5f5; 

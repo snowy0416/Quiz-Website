@@ -121,14 +121,14 @@ const questions = [
       if (gaugeRef.current) {
         let currentValue = 0;
         const updateGauge = setInterval(() => {
-          if (currentValue >= percentage) {
-            clearInterval(updateGauge);
+        if (currentValue >= percentage) {
+         clearInterval(updateGauge);
           } else {
-            currentValue += 0.01;
-            if (currentValue > percentage) {
-              currentValue = percentage;
+         currentValue += 0.01;
+          if (currentValue > percentage) {
+          currentValue = percentage;
             }
-            setGaugeValue(gaugeRef.current, currentValue);
+          setGaugeValue(gaugeRef.current, currentValue);
           }
         }, 10); 
       }
@@ -144,12 +144,12 @@ const questions = [
   
     return (
       <div>
-        <h1>Result</h1>
+      <h1 style={{marginTop:'3%',color:'rgb(165,115,222)'}} data-aos="zoom-in-right">Check Out Your Score!!</h1>
         <div className="gauge" ref={gaugeRef}>
-          <div className="gauge__body">
-            <div className="gauge__fill"></div>
-            <div className="gauge__cover">0%</div>
-          </div>
+        <div className="gauge__body">
+        <div className="gauge__fill"></div>
+        <div className="gauge__cover">0%</div>
+        </div>
         </div>
         <h3>Your Score: {score} / {questions.length}</h3>
         <button onClick={() => navigate('/Test2')} className="cr-btn">Take Quiz Again</button>

@@ -133,7 +133,7 @@ function Result5() {
 
   return (
     <div>
-      <h1>Result</h1>
+  <h1 style={{marginTop:'3%',color:'rgb(165,115,222)'}} data-aos="zoom-in-right">Check Out Your Score!!</h1>
       <div className="gauge" ref={gaugeRef}>
         <div className="gauge__body">
           <div className="gauge__fill"></div>

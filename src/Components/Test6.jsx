@@ -126,19 +126,14 @@ function Test6() {
 
   return (
     <div>
-      <h1>Networking Quiz</h1>
-      {questions.map((q, index) => (
-        <div key={index} className="question-block">
-          <p>{q.question}</p>
-          {q.options.map((option, optIndex) => (
-            <label key={optIndex}>
-              <input
-                type="radio"
-                name={`question-${index}`}
-                value={optIndex}
-                checked={userAnswers[index] === optIndex}
-                onChange={() => handleAnswerChange(index, optIndex)}
-              />
+     <h1 style={{marginTop:'3%',color:'rgb(165,115,222)'}} data-aos="zoom-in-right">Networking Quiz</h1>
+    {questions.map((q, index) => (
+     <div key={index} className="question-block">
+     <p>{q.question}</p>
+     {q.options.map((option, optIndex) => (
+     <label key={optIndex}>
+     <input type="radio"  name={`question-${index}`} value={optIndex} checked={userAnswers[index] === optIndex}
+      onChange={() => handleAnswerChange(index, optIndex)} />
               {option}
             </label>
           ))}

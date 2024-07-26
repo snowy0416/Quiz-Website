@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import MsQuiz from   '../assests/MsQuiz.png'
 
 function MedicalScience() {
   return (
@@ -9,6 +10,7 @@ function MedicalScience() {
       MedicalScience Quiz
         </h1>
       </div>
+      <div className= "main-con">
       <div className="Current-con">
         <h2 className="cr-text">Instructions:</h2>
         <ul className=" Current-easy">
@@ -32,7 +34,10 @@ function MedicalScience() {
       <button className="cr-btn">Start Test</button>
       </Link>
       </div>
-   
+      <div className='pg-imag' data-aos="fade-left">
+    <img src={MsQuiz} alt="MedicalScience Quiz"  style={{ width: '700px', height: '550px' }}  />
+    </div>
+      </div>
     </div>
   )
 }

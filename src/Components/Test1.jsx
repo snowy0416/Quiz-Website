@@ -223,20 +223,14 @@ function Test1() {
 
   return (
     <div>
-        <h1>Programming Quiz</h1>
+      <h1 style={{marginTop:'3%',color:'rgb(165,115,222)'}} data-aos="zoom-in-right">Programming Quiz</h1>
       {questions.map((q, index) => (
         <div key={index} className="question-block">
-          <p>{q.question}</p>
-          <pre className="code-con">{q.code}</pre>
-          {q.options.map((option, optIndex) => (
-            <label key={optIndex}>
-              <input
-                type="radio"
-                name={`question-${index}`}
-                value={optIndex}
-                checked={userAnswers[index] === optIndex}
-                onChange={() => handleAnswerChange(index, optIndex)}
-              />
+        <p>{q.question}</p>
+        <pre className="code-con">{q.code}</pre>
+        {q.options.map((option, optIndex) => (
+        <label key={optIndex}>
+        <input  type="radio"  name={`question-${index}`}  value={optIndex}  checked={userAnswers[index] === optIndex}  onChange={() => handleAnswerChange(index, optIndex)}  />
               {option}
             </label>
           ))}
