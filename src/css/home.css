@@ -15,6 +15,9 @@
     padding: 0;
     box-sizing: border-box;
   }
+  html{
+    scroll-behavior: smooth;
+  }
   body {
     background-image: url('../assests/bg2.jpg');
     background-size: cover;
@@ -113,7 +116,7 @@
     width: 80%;
     height: 60%;
     display: flex;
-    justify-content: space-around;
+    justify-content:  space-around;
     margin-left: 10%;
   }
   
@@ -131,6 +134,7 @@
   .right {
     width: 50%;
   }
+
 .menu-active .c2 ul {
      width: 100%;
     display: flex;
@@ -207,6 +211,7 @@
   margin-bottom: 35px;
   max-width: 100%;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .flip-box-front,
@@ -300,8 +305,6 @@
   text-transform: uppercase;
 }
   
-  
-   /* Responsive styles */
   @media (max-width: 1200px) {
     .text1 {
       font-size: 50px;
@@ -318,7 +321,6 @@
     .con1 {
       flex-direction: column;
       align-items: center;
-      margin-left: 5%;
     }
     .left, .right {
       width: 100%;
@@ -366,7 +368,6 @@
       width: 100%;
     }
     li {
-      /* padding: 15px; */
       font-size: 18px;
     }
     .text1 {
@@ -385,47 +386,5 @@
     width: 100%;
     align-content: center;
   }
-
-
  
-
-
-
-@media screen and (max-width: 600px) {
-  .card1 {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-
-  
-  @media (max-width: 576px) {
-    /* .nav {
-      padding: 10px;
-    } */
-    .tx1 {
-      font-size: 25px;
-    }
-    li {
-      padding: 10px;
-      font-size: 16px;
-    }
-    .text1 {
-      font-size: 30px;
-      line-height: 50px;
-    }
-    .btn1 {
-      width: 60px;
-      height: 30px;
-      font-size: 12px;
-    }
-    .con1 {
-      margin-left: 0;
-      width: 100%;
-      padding: 10px;
-    }
-   
-  }
   

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const questions = [
@@ -111,7 +111,21 @@ const questions = [
 
 function Test6() {
   const [userAnswers, setUserAnswers] = useState(Array(questions.length).fill(null));
+  const [timeLeft , setTimeLeft] = useState(300);
   const navigate = useNavigate();
+
+  useEffect(() =>{
+    if(timeLeft >0){
+      const timer = setTimeout(() => setTimeLeft(timeLeft-1),1000);
+      return () =>clearTimeout(timer);
+    }else{
+      handleSubmit();
+    }
+  },[timeLeft]);
+
+  useEffect(() => {
+    document.title = `Quiz - ${Math.floor(timeLeft / 60)}:${String(timeLeft % 60).padStart(2, '0')}`;
+  }, [timeLeft]);
 
   const handleAnswerChange = (index, answer) => {
     const newAnswers = [...userAnswers];
