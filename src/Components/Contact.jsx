@@ -37,7 +37,7 @@ export default function Contact() {
             </div>
           <input type="email" name="email" placeholder="you@example.com" className="inputs" value={email}  onChange={(e) => setEmail(e.target.value)}  />
           <input type="text"  name="fullName" placeholder="Enter Your Name"className="inputs"   value={fullName}  onChange={(e) => setFullName(e.target.value)} />
-         <textarea  name="feedback" placeholder="Feedback" className="inputs" value={feedback} onChange={(e) => setFeedback(e.target.value)} style={{ height: '100px' }} />
+         <input type ="text" name="feedback" placeholder="Feedback" className="inputs" value={feedback} onChange={(e) => setFeedback(e.target.value)} style={{ height: '100px' }} />
         <br />
          <button type="submit" className="Lg">Submit</button>
         </form>

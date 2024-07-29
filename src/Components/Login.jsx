@@ -24,7 +24,7 @@ export default function Login() {
     }
   } catch (error) {
     if (error.response && error.response.data && error.response.data.message) {
-        alert(error.response.data.message); //  for Show specific error message from server
+        alert(error.response.data.message); //  for Showing specific error message from server
     } else {
         alert('Invalid credentials. Please try again.');
     }

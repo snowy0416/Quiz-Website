@@ -12,8 +12,6 @@ export default function Quizzes() {
     <div>
       <div className="qz-text" style={{color:'rgb(165, 115, 222)',marginTop:'3%'}} data-aos="zoom-in-right">
       <h1>Check Out Our Quizzes</h1>
-        {/* <br /> */}
-        {/* <p>Explore a wide range of quizzes available, covering diverse topics and interests, designed to test your knowledge and provide a fun and engaging experience.</p> */}
       </div>
       <div className="box-container" data-aos="zoom-out-left" >
             <div className="flip-box">

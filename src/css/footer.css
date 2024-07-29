@@ -9,6 +9,7 @@
     margin-top: 30px;
   }
 
+
   .div2{
     width: 50%;
     display: flex;
@@ -16,13 +17,13 @@
     margin-top: 1%;
   }
   .emx{
-    width: 200px;
+    width: max-content;
     padding: 5px;
     background-color: #89939E;
     text-align: left;
     border-radius: 20px;
     margin-top:2%;
-    margin-left:15%;
+    margin-left:8%;
   }
   .easy{
     list-style-type: none;
@@ -40,5 +41,9 @@
   img{
     margin-left: 2%;
   }
+
+
+
+
  
  

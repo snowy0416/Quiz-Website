@@ -28,7 +28,7 @@
     height: 100%;
     background-color: rgb(165, 115, 222);
     transform-origin: center top;
-    transform:rotate(0.25turn);
+    transform:rotate(0turn);
     transition:transform 0.2s ease-out;
 
 }

@@ -13,7 +13,7 @@ function Footer() {
         <div className="div1">
           <div className="c1">
             <img src={Quizlogo} alt="logo" style={{ width: '50px', height: '40px' }}  />
-            <p className="tx1">BrainZap</p>
+            <p className="ft1">BrainZap</p>
           </div>
           <p>Copyright © 2020 BrainZap ltd.</p>
           <p>All rights reserved</p><br/>

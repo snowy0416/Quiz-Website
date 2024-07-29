@@ -1,6 +1,5 @@
 import React from 'react';
-import Image from '../assests/image.png'; 
-import Video1 from '../assests/video1.mp4'; 
+import Image from '../assests/image.png';  
 import { Link } from 'react-router-dom';
 import Programming2 from '../assests/programming2.jpg'
 import Current2 from '../assests/current2.jpg';
@@ -25,31 +24,7 @@ function Home() {
           <img src={Image} alt="logo" style={{ width: '600px', height: '600px' }} />
         </div>
       </div>
-      <div className="con1 con2">
-        <div className="video-container" data-aos="zoom-out-down">
-          <video autoPlay loop muted>
-            <source src={Video1} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div className="right1" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-          <h1 className="text2">Teaching, minus the time with BrainZap</h1>
-          <br /><br />
-          <hr className='line'></hr>
-          <p style={{textAlign:'left'}}>It focuses on traditional methods, such as direct instruction, interactive discussions, 
-            hands-on activities, and manual assessments. This approach emphasizes personal interaction, customized feedback,
-            and adaptive learning strategies to engage students and evaluate their understanding.
-          </p>
-          <hr className='line'></hr><br /><br />
-          <hr className='line'></hr>
-          <p style={{textAlign:'left'}}>In Active Participation Students take part in group activities, projects, and discussions,
-            which promotes collaboration and allows them to apply and deepen their understanding.
-            This hands-on approach enhances their critical thinking skills and encourages active engagement with the material.
-          </p>
-          <hr className='line'></hr>
-        </div>
-      </div>
-        <div className="box-container" data-aos ="zoom-out-down" >
+        <div className="box-container" data-aos="fade-up-right">
             <div className="flip-box">
               <div className="flip-box-front text-center" style={{ backgroundImage: `url(${Programming2})` }}>
                 <div className="inner color-white">
@@ -102,7 +77,7 @@ function Home() {
               </div>
             </div>
         </div>  
-        <div className="box-container" data-aos ="zoom-out-down">
+        <div className="box-container" data-aos="fade-up-right">
             <div className="flip-box">
               <div className="flip-box-front text-center" style={{ backgroundImage: `url(${Logical})` }}>
                 <div className="inner color-white">
